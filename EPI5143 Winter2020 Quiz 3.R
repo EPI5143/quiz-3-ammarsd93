@@ -55,9 +55,15 @@ ggplot(data=mpg)+geom_point(mapping=aes(x=displ,y=hwy,color=factor(class),shape=
 # Question 5. Modify the code to add a suitable title of your choice to your plot
 
 ## Answer 5:
-# I gave the final plot a title called "finalplot" using the following code:
+# I gave the final plot a title called "Plotting Vehicle Efficiency" using the following code:
 ##################
-finalplot<-ggplot(data=mpg)+geom_point(mapping=aes(x=displ,y=hwy,color=factor(class),shape=factor(drv),size=factor(cyl)))
+ggplot(data=mpg)+geom_point(mapping=aes(x=displ,y=hwy,color=factor(class),shape=factor(drv),size=factor(cyl)))+ggtitle("Plotting Vehicle Efficiency")
+##################
+
+##Extra work:
+# I saved this plot under the name "Finalplot" for easier usage in the future, using the following code
+##################
+finalplot<-ggplot(data=mpg)+geom_point(mapping=aes(x=displ,y=hwy,color=factor(class),shape=factor(drv),size=factor(cyl)))+ggtitle("Plotting Vehicle Efficiency")
 ##################
 
 # End of quiz
